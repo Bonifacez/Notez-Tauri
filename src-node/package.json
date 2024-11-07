@@ -1,0 +1,39 @@
+{
+    "name": "src-node",
+    "version": "1.0.0",
+    "description": "notez-backend node api",
+    "main": "src/index.ts",
+    "scripts": {
+        "start": "node dist/index.js",
+        "dev": "nodemon",
+        "build": "tsc",
+        "package": "pkg ."
+    },
+    "pkg": {
+        "scripts": "dist/**/*.ts",
+        "assets": [
+            "dist/**/*",
+            "./node_modules/open/xdg-open"
+        ],
+        "targets": [
+            "node18-macos-arm64"
+        ]
+    },
+    "bin": "dist/index.js",
+    "author": "Boniface",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.21.0",
+        "llamaindex": "^0.6.5",
+        "open": "^6.4.0",
+        "pkg": "^5.8.1",
+        "ts-node-dev": "^2.0.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/node": "^22.5.5",
+        "nodemon": "^3.1.7",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.2"
+    }
+}

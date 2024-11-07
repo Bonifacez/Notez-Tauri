@@ -1,0 +1,48 @@
+{
+    "name": "notez",
+    "version": "0.1.4",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "build:fastapi": "/Users/boniface/miniconda/envs/notez/bin/pyinstaller -c --clean --onefile --add-data 'py-attached/vec0.dylib:sqlite_vec' --add-data 'py-attached/nltk_cache:llama_index/core/_static/nltk_cache' --hidden-import=tiktoken_ext.openai_public  --hidden-import=tiktoken_ext --osx-bundle-identifier com.boniface.notez --name main-aarch64-apple-darwin --distpath src-tauri/bin/api src-api/main.py",
+        "start": "next start",
+        "tauri": "tauri",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@ai-sdk/openai": "^0.0.54",
+        "@langchain/community": "^0.2.31",
+        "@nextui-org/react": "^2.4.6",
+        "@tauri-apps/api": "^1.6.0",
+        "@tauri-apps/cli": "^1.6.1",
+        "ai": "^3.3.21",
+        "better-sqlite3": "^11.2.1",
+        "framer-motion": "^11.3.29",
+        "langchain": "^0.2.17",
+        "llamaindex": "^0.5.20",
+        "lucide-react": "^0.436.0",
+        "next": "14.2.6",
+        "openai": "^4.57.0",
+        "pdf-parse": "^1.1.1",
+        "react": "^18",
+        "react-dom": "^18",
+        "slate": "^0.103.0",
+        "slate-history": "^0.109.0",
+        "slate-react": "^0.109.0",
+        "sqlite-vec": "^0.1.2-alpha.7",
+        "zustand": "^4.5.5"
+    },
+    "devDependencies": {
+        "@types/better-sqlite3": "^7.6.11",
+        "@types/is-hotkey": "^0.1.10",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.6",
+        "postcss": "^8",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
+}

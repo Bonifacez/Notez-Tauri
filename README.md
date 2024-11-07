@@ -4,7 +4,7 @@
 
 ---
 
-A Copilot / Cursor Like AI Markdown
+A Copilot / Cursor Like AI Markdown Base On Tauri
 
 ---
 

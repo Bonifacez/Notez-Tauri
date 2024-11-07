@@ -1,0 +1,8 @@
+export APPLE_CERTIFICATE=
+export APPLE_CERTIFICATE_PASSWORD=
+export APPLE_ID=
+export APPLE_PASSWORD=
+export APPLE_SIGNING_IDENTITY=
+export APPLE_TEAM_ID=
+
+npm run tauri build
